@@ -1,0 +1,18 @@
+
+.amap-copyright{
+  box-sizing: content-box;
+}
+
+.amap-copyright, .amap-logo{
+    display: none !important;
+}
+
+#mapDiv .amap-indoormap-floorbar-control{bottom:10%}
+
+.amap-icon {
+  z-index: 58;
+}
+
+.amap-icon img {
+  z-index: 55;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript">
+    </script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <style type="text/css">
+    </style>
+    <title>高德地图</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/common/edit.css" />
+    <link rel="stylesheet" href="../css/gd.css" />
+  </head>
+  <body>
+    <div class="input-card">
+        <h4>
+            左击获取 经纬度、关键词查询：&nbsp;&nbsp;<button class="btn" id="img_urlDiv" class="btn">上传</button>
+            <input type="text" id="img_urlTxt" readonly="readonly" style="display:none;" class="file-show-path" />
+            <input type="file" id="img_url" onchange="previewHandle(this)" name="img_url" style="display:none;" accept="image/*" />
+        </h4>
+          
+        <div class="input-item">
+            <input type="text" style="margin-right: 10px;" id="lnglat" onkeypress="if(event.keyCode==13){ queryLatlng(); }"><button id="btn-query" class="btn">查询</button>
+        </div>
+    </div>
+    <div id="mapDiv" class="map" tabindex="0"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <script type="text/javascript" src='https://webapi.amap.com/maps?v=1.4.14&key=72c65dc18389b4e3a5e9b549435f0173&plugin=AMap.ToolBar,AMap.ControlBar,AMap.Autocomplete'></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
+    <script type="text/javascript" src="../js/common/public.js"></script>
+    <script type="text/javascript" src="../js/gd.js"></script>
+    <script type="text/javascript">
+
+    </script>
+    
+  </body>
+  
+</html>
